@@ -23,10 +23,10 @@ def scrape():
    return redirect('/', code=302)
 
 # update the database
-mars.update_one({}, {"$set":mars_data}, upsert=True)
-return redirect('/', code=302)
+   mars.update_one({}, {"$set":mars_data}, upsert=True)
+   return redirect('/', code=302)
 
 if __name__ == "__main__":
    app.run()
-   
+
    
